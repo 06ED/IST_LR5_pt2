@@ -44,8 +44,8 @@ void test_get_reminder() {
 
 
 void test_get_division() {
-    constexpr int a = 12;
-    constexpr int b = 6;
+    constexpr int a = 6;
+    constexpr int b = 12;
     constexpr int expected = 2;
     const int actual = get_division(a, b);
 
@@ -53,7 +53,7 @@ void test_get_division() {
 }
 
 
-int main() {
+int launch_tests() {
     cute::suite s;
 
     s.emplace_back(test_is_correct_EMPTY);
